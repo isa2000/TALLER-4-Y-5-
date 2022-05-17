@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>TALLER 4 </title>
+</head>
+
+<body>
+    <center>
+        <h1><strong>EJERCICIOS RESUELTOS</strong></h1>
+    </center>
+    <script>
+    
+        function convertidor() {
+            var numero = prompt("Ingrese un valor en base octal");
+            var base_octal = parseInt(numero, 8);
+            var octal = base_octal.toString(10);
+            alert("Mostrar su resultado en base decimal: " + octal);
+        }
+
+    
+        function operaciones() {
+            var digito1 = parseInt(prompt("Insertar el primer número:"));
+            var digito2 = parseInt(prompt("Insertar el segundo número:"));
+            for (i = 0; i < 5; i++) {
+
+                if (i == 0) {
+                    suma = digito1 + digito2
+                    alert("La suma es: " + suma)
+                }
+                if (i == 1) {
+                    resta = digito1 - digito2
+                    alert("La resta es: " + resta)
+                }
+                if (i == 2) {
+                    multiplicacion = digito1 * digito2
+                    alert("La multiplicación es: " + multiplicacion)
+                }
+                if (i == 3) {
+                    divi = digito1 / digito2
+                    alert("La división es: " + division)
+                }
+                if (i == 4) {
+                    mod = digito1 % digito2
+                    alert("El porcentaje es: " + mod)
+                }
+            }
+
+        }       
+    </script>
+
+    <div>
+        <button class="base" type=submit value="Resultado" onclick="convertidor()">Convertir un valor octal a decimal</button>
+
+        <button class="base" type=submit value="Resultado" onclick="operaciones()">Operaciones matematicas</button>
+    </div>
+
+</body>
+
+</html>

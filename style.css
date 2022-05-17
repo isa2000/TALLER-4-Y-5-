@@ -1,0 +1,32 @@
+body{
+    background-color:rgb(238, 241, 232) ;
+}
+h1{
+    font-family: monospace;
+    color: rgb(228, 41, 113);
+    margin-top: 40px;
+    
+   }
+
+div{
+    display: grid;
+    align-items: center;
+    margin-top: 10%;
+}
+.base {
+ padding: 20px 15px;
+ background-color: rgb(96, 155, 165);
+ border: 3px solid #030a06;
+ font-size: 16px;
+ font-family: monospace;
+ color: #080808;
+ line-height: 1;
+ border-radius: 20px;
+ outline: none;
+ cursor: pointer;
+ margin: auto;
+ border-radius: 5px;
+ display: block;
+ margin-bottom: 40px;
+ 
+}
