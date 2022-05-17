@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Tarea4</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <center><h1>Mostrar los valores de los productos</h1></center>
+    <script>
+    function producto_alimenticio (codigo, nombre, precio){
+        this.codigo=codigo;
+        this.nombre=nombre;
+        this.precio=precio;
+        this.imprimeDatos=imprimeDatos;
+    }
+    function imprimeDatos (codigo, nombre, precio){
+        alert(this.codigo);
+        alert(this.nombre);
+        alert(this.precio);
+    }
+    function mostrar(){
+    var producto = new Array(3);
+    producto[0]=new producto_alimenticio("1","Manzana"," 1.50");
+    producto[1]=new producto_alimenticio("2","Pera"," 2.00");
+    producto[2]=new producto_alimenticio("3","Melon"," 3.00");
+        for (i=0; i<producto.length; i++){
+            alert("código: "+ producto[i].codigo + " nombre: "+ producto[i].nombre + " Precio: "+ producto[i].precio);
+        }
+    }
+    </script>
+
+    <div>
+            <button type="button" onclick="mostrar()">Mostrar</button>
+    </div>
+</body>
+
+</html>
